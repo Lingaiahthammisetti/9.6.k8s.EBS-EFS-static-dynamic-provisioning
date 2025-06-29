@@ -36,7 +36,7 @@ metadata:
 spec:
   type: LoadBalancer
   selector:
-    purpose: efs-dyanamic
+    purpose: efs-dynamic
   ports:
   - protocol: TCP
     port: 80 # service port
