@@ -35,6 +35,7 @@ metadata:
   name: efs-nginx-pod
   labels:
     purpose: efs-static
+    project: expense
 spec:
   containers:
   - name: app
