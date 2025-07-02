@@ -18,6 +18,7 @@ metadata:
   labels:
     purpose: ebs-dynamic
     project: expense
+    environment: dev
 spec:
   containers:
   - name: nginx
