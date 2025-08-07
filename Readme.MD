@@ -1,6 +1,6 @@
 # EBS Static Provisioning Steps:
 ===========================================
-1. We need to create the EBS volume in AWS.  create a volume in AWS Elastic Block Store, attach to region us-ease-1c. name the instance ebs-static
+1. We need to create the EBS volume in AWS.  create a volume in AWS Elastic Block Store, attach to region us-ease-1c. name the instance ebs-static. volume and ec2 should be same availabley zone.
 2. We need to install the EBS CSI drivers in EKS Cluster.
 kubectl apply -k "github.com/kubernetes-sigs/aws-ebs-csi-driver/deploy/kubernetes/overlays/stable/?ref=release-1.32"
 3. The worker nodes should have access to connect with EBS volumes. First Add IAM role to worker nodes and then Attach EBSCSI policy to the EC2 instance role.
