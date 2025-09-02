@@ -17,6 +17,7 @@ metadata:
   name: efs-dynamic-pod
   labels:
     purpose: efs-dynamic
+    environment: dev
 spec:
   containers:
     - name: nginx

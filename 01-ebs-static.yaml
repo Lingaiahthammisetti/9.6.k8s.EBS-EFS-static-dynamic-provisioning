@@ -34,7 +34,7 @@ metadata:
   labels:
     purpose: ebs-static
     project: expense
-    environment: dev
+    environment: dev #extra value in pod
 spec:
   containers:
   - name: nginx # this cotnainer has root acccess, bec its download form internet.

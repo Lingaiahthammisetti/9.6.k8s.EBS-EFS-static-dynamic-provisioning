@@ -36,6 +36,7 @@ metadata:
   labels:
     purpose: efs-static
     project: expense
+    environment: dev
 spec:
   containers:
   - name: app
